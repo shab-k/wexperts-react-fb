@@ -34,8 +34,6 @@ const blogReducer = (state = { blogs: [] }, action) => {
     case 'EDIT_BLOG':
       console.log('edited blog!', action.blog);
       return state;
-      // return { ...state, blogs: [...state.blogs, action.blog] };
-      // return { ...state, blogs: state.blogs.map((blog) => (blog.id === action.payload.id ? action.payload : blog)) };
     case 'EDIT_BLOG_ERROR':
       console.log('edit blog error', action.err);
       return state;

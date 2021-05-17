@@ -43,7 +43,7 @@ function Footer() {
         <FooterLinksWrapper>
           <FooterLinkItems>
             <H2 white>About Us</H2>
-            <FooterLink to='/sign-up'>How it works</FooterLink>
+            <FooterLink to='/'>How it works</FooterLink>
             <FooterLink to='/'>Testimonials</FooterLink>
           </FooterLinkItems>
           <FooterLinkItems>

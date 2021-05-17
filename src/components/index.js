@@ -6,4 +6,3 @@ export { default as Edit } from './Edit/Edit';
 export { default as BlogDetails } from './BlogDetails/BlogDetails';
 export { default as BlogList } from './BlogList/BlogList';
 
-// export { default as Pricing } from './Pricing/Pricing';

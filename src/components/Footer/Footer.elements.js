@@ -30,11 +30,6 @@ export const FooterSubHeading = styled.p`
   font-size: 24px;
 `;
 
-// export const FooterSubText = styled.p`
-//   margin-bottom: 0px;
-//   font-size: 20px;
-// `;
-
 export const Form = styled.form`
   display: flex;
   justify-content: center;

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import Img from '../../images/brainstorming_.png';
 
 export const InfoSec = styled.div`
   color: #fff;
@@ -59,7 +58,6 @@ export const Img = styled.img`
   vertical-align: middle;
   display: inline-block;
   max-height: 500px;
-  /* background-image: url('../../images/brainstorming_.png'); */
 `;
 
 

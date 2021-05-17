@@ -5,7 +5,7 @@ import { shallowEqual, useSelector, useDispatch } from 'react-redux';
 import { useFirestoreConnect, useFirestore } from 'react-redux-firebase';
 import { useState, useEffect } from "react";
 import { deleteBlog } from '../../store/actions/blogs';
-// import { editBlog } from '../../store/actions/blogs';
+
 import {
   Container,
   H2,
@@ -19,23 +19,7 @@ import {
   Article,
 } from './BlogDetails.elements';
 
-// const BlogDetails = ({ match }) => {
-//   // useFirestoreConnect([{ collection: 'blogs', doc: blogId }]);
-//   // const blog = useSelector(
-//     //   (state) => (blogs ? blog.id === blogId : null)
-//     //   // (state) => {
-//       //   //   blogs ? blogId : null;
-//       //   //   return blog;
-//       //   // }
-//       const blog = useSelector((state) => (blogs ? blogs[id] : null));
-//       // return {
-//         //   blog: blog,
-//         // }
-//       };
-// state.blogs.find((blog) => blog.id === blogId)
-
 const BlogDetails = () => {
-  // const { blog } = props;
   const firestore = useFirestore();
   // const { blogId } = match.params;
   const { id } = useParams();
@@ -96,22 +80,11 @@ const BlogDetails = () => {
     );
   } else {
     return (
-      <div className="container center">
+      <H2 center>
         <p>Loading project...</p>
-      </div>
+      </H2>
     );
   }
 };
-
-
-// const mapStateToProps = (state, ownProps) => {
-//   // console.log(state);
-//   const id = ownProps.match.params.id;
-//   const blogs = state.firestore.data.blogs;
-//   const blog = blogs ? blogs[id] : null
-//   return {
-//     blog: blog
-//   }
-// }
 
 export default BlogDetails;

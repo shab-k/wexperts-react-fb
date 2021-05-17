@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-// import { H2, Paragraph } from '../../globalStyles';
 
 // export const BlogListMain = styled.div`
 // 	display: flex;
@@ -62,7 +61,3 @@ height: 100%;
   }
 }
 `;
-// export const H2 = styled(H2)`
-
-  
-// `;

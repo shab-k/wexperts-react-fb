@@ -11,8 +11,7 @@ const BlogList = ({ blogs }) => {
         </H1>
         {
           blogs &&
-            blogs.map((blog, index) => (
-              // Object.values(blogs).map((blog) => (
+            blogs.map((blog) => (
               <BlogPreview key={blog.id}>
                 <BlogLinks to={`/blogs/${blog.id}`}>
                   <H2>{blog.title}</H2>
@@ -22,8 +21,6 @@ const BlogList = ({ blogs }) => {
               </BlogPreview>
             ))
         }
-        {/*</Main>*/}
-        {/* </BlogListMain> */}
       </Container>
     </Wrapper>
   );

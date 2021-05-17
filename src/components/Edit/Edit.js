@@ -24,7 +24,6 @@ const Edit = () => {
   const history = useHistory();
   // const { blogId } = match.params;
   const { id } = useParams();
-  // const docRef = firestore.collection('blogs').doc(id);
   const docRef = id ? firestore.collection('blogs').doc(id) : null;
   // useFirestoreConnect([{ collection: 'blogs' }]);
   // const blogs = useSelector((state) => state.firestore.data.blogs);
@@ -61,7 +60,6 @@ const Edit = () => {
 
   const onInputChange = (e) => {
     // setBlog({ [e.target.name]: e.target.value });
-    // setBlog({ ...blog, value: e.target.value });
     setBlog({ ...blog, [e.target.name]: e.target.value });
   };
   
@@ -108,15 +106,6 @@ const Edit = () => {
               onChange={(e) => onInputChange(e)}
             ></Textarea>
             <Label>Author:</Label>
-            {/* <Select
-              required
-              name="author"
-              onChange={(e) => onInputChange(e)}
-              // value={blog.value}
-            >
-              <Option value="">{blog.author}</Option>
-              <Option value={blog.value}></Option>
-            </Select> */}
                <Input
               type="text"
               required
@@ -124,7 +113,6 @@ const Edit = () => {
               name="author"
               onChange={(e) => onInputChange(e)}
             />
-            {/* <Button primary>Edit Blog</Button> */}
             <Button primary type="submit">
                   {/* {id ? "Update Student" : "Add Student"} */}
                   Edit

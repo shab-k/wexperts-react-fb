@@ -22,11 +22,6 @@ const Create = () => {
   const history = useHistory();
 
   const blog = useSelector((state) => state.blogs.blogs);
-  // const blog = useSelector((state) =>
-  //   currentId
-  //     ? state.blogs.blogs.find((message) => message._id === currentId)
-  //     : null
-  // );
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
@@ -42,15 +37,7 @@ const Create = () => {
     //   history.push('/blog');
     // });
 
-    // if (currentId === 0) {
     dispatch(createBlog({ ...blog }, history.push('/blog')));
-    // clear();
-    // } else {
-    //   dispatch(
-    //     updatePost(currentId, { ...postData, name: user?.result?.name })
-    //   );
-    //   clear();
-    // }
   };
 
   return (
@@ -74,10 +61,6 @@ const Create = () => {
               onChange={(e) => setBody(e.target.value)}
             ></Textarea>
             <Label>Author:</Label>
-            {/* <Select value={author} onChange={(e) => setAuthor(e.target.value)}>
-              <Option value="John">John</Option>
-              <Option value="Jane">Jane</Option>
-            </Select> */}
               <Input
               type="text"
               required

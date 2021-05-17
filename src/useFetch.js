@@ -8,9 +8,6 @@ const useFetch = (url) => {
   useEffect(() => {
     const abortCont = new AbortController();
 
-  // let sortedData = data.sort((a, b) => b - a);
-  //   setData(sortedData);
-
       fetch(url, { signal: abortCont.signal })
       .then(res => {
         if (!res.ok) { // error coming back from server
